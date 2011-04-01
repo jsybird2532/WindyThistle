@@ -1,0 +1,48 @@
+File names will be stored as (filename) for original and (filename).vc for changed versions, a primary log called log.txt will also be made, this is log.txt
+
+
+Filename
+Update # [-co]
+Time and Date Checked In
+[Time and Date Checked Out]
+Username Checked In
+[Username Checked Out]
+Descriptive Text
+
+File Outline
+
+int main(char * arg1, char * arg2, char * arg3, char * arg4)
+{
+   // Check arg1 to determine function using strcmp and go to appropriate function
+}
+
+int checkin(arg2)
+{
+   // Check if file exists in vc file, if it does, make new entry and move file
+   // Check if file is co-ed by user, if it is, perform a diff with the newest entry, update entry in .vc and delete file
+}
+
+int checkout(char * arg2)
+{
+   // checkout file and make newest version, move it to the current dir
+}
+
+int read(char * arg2, char * arg3)
+{
+   // Make and grab file ver and overwrite if filename exists in current directory, if arg3 is nothing, then grab most recent ver
+}
+
+int diff(char * arg2, char * arg3, char * arg4)
+{
+   // Make versions, do a diff to determine a patch to make arg3 arg4
+}
+
+int log(char * arg2)
+{
+   // Grab Log for file
+}
+
+char *  buildver(char * filename, int verNum)
+{
+   // Build a requested version of a specific file
+}
